@@ -13,7 +13,7 @@ begin
   Jeweler::Tasks.new do |gemspec|
     gemspec.name = "highrise"
     gemspec.summary = "Ruby wrapper around Highrise API"
-    gemspec.email = "kmayer@bitwrangler.com"
+    gemspec.email = ["marcos@tapajos.me", "kmayer@bitwrangler.com"]
     gemspec.homepage = "http://github.com/kmayer/highrise"
     gemspec.description = %{
 Based on the original API module from DHH, http://developer.37signals.com/highrise/, this
