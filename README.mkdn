@@ -1,87 +1,9 @@
 # Highrise (1.0)
 
-## What is it?
+This repository has been deprecated in favor of the upstream repository (where I am also a comitter)
 
-This gem provides a set of classes to access information on [Highrise][h] via the published [API][api]:
+http://github.com/tapajos/highrise
 
-    Comment, Company, Email, Group, Case, Membership, Note, Person, Subject, Tag, Task, User. 
+Ken Mayer
 
-All these classes are inherited from ActiveResouce::Base. Refer to the [ActiveResouce][ar] documentation for more information.
-
-## Installing
-
-    gem install highrise
-
-### Dependencies (see the Rakefile or run <code>rake check_dependencies</code>)
-
-### Documentation
-
-  I'm on [rdoc.info][rdoc] and here're some [metrics][devver]
-
-### Configure your key
-    
-    require 'rubygems'
-    require 'highrise'
-    
-    Highrise::Base.site = 'http://your_api:login@your_site.highrisehq.com/'
-    
-or
-
-    Highrise::Base.site = 'http://your_site.highrisehq.com'
-    Highrise::Base.user = 'api-auth-token'
-
-and, if you want [caching][c]:
-
-    Highrise::Base.cache_store= <your normal ActiveSupport::Caching options>
-    
-If you are using this in a Rails application, putting this code in a config/initializers/highrise.rb
-file is recommended. See config_initializers_highrise.rb in the examples/ directory.
-
-## Usage
-
-    @tags = Highrise::Tag.find(:all)
-    
-    @people = Highrise::Person.find_all_across_pages(:params => {:tag_id => 12345})
-    
-    @person.tag!("VIP")
-
-## License
-
-This code is free to be used under the terms of the [MIT license][mit].
-
-## Bugs, Issues, Kudos and Catcalls
-
-Comments are welcome. Send your feedback through the [issue tracker on GitHub][i]
-
-## Contributors
-
-* [Marcos Tapajós][mt]
-* [Nicolas Bianco][nb]
-* [Luis Gustavo][lg]
-* [Thiago Lelis][tl]
-* [Ken Mayer][km]
-
-## Special Thanks
-
-[Rails Envy Podcast Episode #77][re] for mentioning
-[How to Cache Anything With ActiveSupport][rh] on the very *day* I started writing the cache code. Thank you, Rein
-for writing an excellent tutorial and [posting your source][e] on GitHub.
-
-[api]: http://developer.37signals.com/highrise
-[ar]: http://api.rubyonrails.org/classes/ActiveResource/Base.html
-[c]:  http://api.rubyonrails.org/classes/ActiveSupport/Cache
-[co]: http://github.com/kmayer
-[e]:  http://github.com/primedia/endeca/tree/master
-[h]:  http://www.highrisehq.com/
-[i]:  http://github.com/kmayer/highrise/issues
-[ii]: http://www.improveit.com.br/en
-[km]: http://github.com/kmayer
-[lg]: http://github.com/luisbebop
-[mit]:http://www.opensource.org/licenses/mit-license.php
-[mt]: http://www.improveit.com.br/en/company/tapajos
-[nb]: http://github.com/slainer86
-[re]: http://www.railsenvy.com/2009/4/29/rails-envy-podcast-episode-077-04-29-2009
-[rh]: http://reinh.com/blog/2009/04/27/how-to-cache-anything-with-activesupport.html
-[tl]: http://github.com/ThiagoLelis
-[rdoc]: http://rdoc.info/projects/kmayer/highrise
-[devver]: https://devver.net/caliper/project?repo=git%3A%2F%2Fgithub.com%2Fkmayer%2Fhighrise.git
+kmayer@bitwrangler.com
